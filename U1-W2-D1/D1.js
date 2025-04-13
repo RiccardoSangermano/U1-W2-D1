@@ -11,7 +11,7 @@ REGOLE
  Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se volessi farli comprendere a un bambino.
 */
 
-/* I diversi datatypeomparati ggi sono: Strings, undefined, null e bolean.
+/* I diversi datatypeimparati oggi sono: Strings, undefined, null e bolean.
 Gli strings sono un parola contenuta all interno di due appendici. Possono contenere anche valori numerici, ma devono essere spovvisti di appendici
 Gli indefined, rappresentano una variabile a cui non è stata indicata un valore.
 I null, quando  vi è un'assenza esplicita di un valore.
@@ -42,9 +42,11 @@ let somma = number1 + number2;
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
-let myname = "Sangermano"
-const myname1 = "Riccardo"
-const myname1 = "Sangermano" 
+let myName1 = "Sangermano"
+myName1 = "Riccardo"
+
+// const myName1 = "Riccardo";
+//console.log(myName1)
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
@@ -57,8 +59,12 @@ let sottrazione = numero3 - x
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
  Verifica che name1 sia diversa da name2 (suggerimento: è la stessa cosa di verificare che la loro uguaglianza sia falsa).
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
-/*
+*/
 
-let name1 = "jonh";
-let name2 = "Jonh";
-console.log(name1 === name2)
+let name1 = "Riccardo"
+let name2 = "Riccardo"
+
+console.log(name1 !== name2)
+console.log(!(name1 === name2))
+console.log(name1.toLowerCase() === name2.toLowerCase())
+console.log(name2)
